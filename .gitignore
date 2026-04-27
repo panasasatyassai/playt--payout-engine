@@ -3,9 +3,12 @@ __pycache__/
 *.pyc
 venv/
 .env
-.env
+ 
+
 backend/.env
-frontend/.env
+ 
+frontend/frontend/.env
+
 # Django
 db.sqlite3
 
