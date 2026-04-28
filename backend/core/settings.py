@@ -151,3 +151,5 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = list(default_headers) + [
     "idempotency-key",
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ALLOWED_HOSTS = ['*']  # temp
