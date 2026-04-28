@@ -57,7 +57,7 @@ export const simulatePayment = async (merchantId, amount) => {
 };
 
 export const getClientPayments = async (merchantId) => {
-  const res = await fetch(`http://127.0.0.1:8000/api/client-payments/${merchantId}/`);
+  const res = await fetch(`${BASE_URL}/client-payments/${merchantId}/`);
   return res.json();
 };
 
@@ -79,7 +79,7 @@ export const getClientPayments = async (merchantId) => {
 // };
 
 export const createPayout = async (merchantId, amount, key) => {
-  const res = await fetch("http://127.0.0.1:8000/api/v1/payouts", {
+  const res = await fetch(`${BASE_URL}/v1/payouts`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
